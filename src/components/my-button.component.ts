@@ -9,11 +9,11 @@ import { Component } from "@angular/core";
   styleUrls: ['./my-button.component.css']
 })
 export class MyButtonComponent {
-  public showTextBlock: boolean = false;
+  public showAdditionalText: boolean = false;
   public text: string = 'Click Me!';
 
   public onClick() {
-    this.showTextBlock = !this.showTextBlock;
-    this.text = this.showTextBlock ? 'Close Me!' : 'Click Me!';
+    this.showAdditionalText = !this.showAdditionalText;
+    this.text = this.showAdditionalText ? 'Close Me!' : 'Click Me!';
   }
 }
