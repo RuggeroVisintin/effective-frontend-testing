@@ -1,1 +1,4 @@
-<button class="my-button" [ngStyle]="{'backgroundColor': color}" data-testid="my-btn"> Click Me! </button>
+<button class="my-button" data-testid="my-btn" (click)="onClick()"> {{text}} </button>
+<p *ngIf="showTextBlock" data-testid="my-btn.additional-text-block">
+  This is an additional text block that is shown only on click
+</p>
