@@ -8,9 +8,6 @@ describe('MyButtonComponent', () => {
     }).compileComponents();
   });
 
-  // This test only partially covers the unit of behaviour and focuses too much on the implementation
-  // Resulting in a brittle test that easily breaks and misses to check we correctly setup the html template
-  // In this case the test pass but the behaviour is not working as expected
   it('Should show the text block when clicked - Weak Test', () => {
     const fixture = TestBed.createComponent(MyButtonComponent);
     const myButton = fixture.componentInstance;
@@ -30,8 +27,6 @@ describe('MyButtonComponent', () => {
   })
 
 
-  // This test failes as a demonstration that the behaviour is not properly implemented
-  // See how I'm not interacting with the internal properties of the component
   it('Should show the text block when clicked - Proper Test', () => {
     const fixture = TestBed.createComponent(MyButtonComponent);
     const button = fixture.nativeElement.querySelector('[data-testid="my-btn"');
